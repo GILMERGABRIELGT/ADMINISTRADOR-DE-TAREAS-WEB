@@ -1,0 +1,78 @@
+.body {
+    background-color: #7e0ea3;
+}
+
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #1a1a1a;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+/* Grupo de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada tarea */
+.tarea {
+    border: 1px solid #1a1a1a;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.2s ease;
+}
+
+.tarea:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para tareas vencidas */
+.tarea.vencida {
+    background-color: #ff4d4d; /* Rojo oscuro */
+    box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.tarea.resuelta {
+    background-color: #33cc33; /* Verde oscuro */
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.7), 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+/* Estilo para tareas pendientes */
+.tarea.pendiente {
+    background-color: #ffffff; /* Blanco */
+    color: #1a1a1a;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo para el título de las tareas */
+.tarea h3 {
+    margin: 0;
+}
+
+/* Estilo para los botones */
+button {
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #1a1a1a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}

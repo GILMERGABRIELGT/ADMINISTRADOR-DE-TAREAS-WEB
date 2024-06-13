@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilostarea2.css" rel="stylesheet"> 
+    <title>TAREA 2</title>
+</head>
+
+    <header>  
+        <h1 class="titulo-header">ENLISTADOR DE TAREAS</h1>
+    </header>
+    <body>
+        <div class="container mt-5">
+            <h1>Formulario de Tareas</h1>
+            <form id="tareaForm">
+                <div class="form-group">
+                    <label for="nombreTarea">Tarea:</label>
+                    <input type="text" class="form-control" id="nombreTarea" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha de Inicio:</label>
+                    <input type="date" class="form-control" id="fechaInicio" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaFin">Fecha de Fin:</label>
+                    <input type="date" class="form-control" id="fechaFin" required>
+                </div>
+                <div class="form-group">
+                    <label for="responsable">Responsable:</label>
+                    <input type="text" class="form-control" id="responsable" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea class="form-control" id="descripcion" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar Tarea</button>
+            </form>
+            <div class="mt-4">
+                <input type="text" id="buscarTarea" class="form-control" placeholder="Buscar tarea">
+            </div>
+            <div class="mt-2">
+                <button id="filtroTodas" class="btn btn-secondary">Todas</button>
+                <button id="filtroVencidas" class="btn btn-secondary">Vencidas</button>
+                <button id="filtroResueltas" class="btn btn-secondary">Resueltas</button>
+            </div>
+            <div id="listaTareas" class="mt-4"></div>
+        </div>
+        
+        <script src="logica.js"></script>
+    </body>
+</html>
